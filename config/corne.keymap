@@ -8,9 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-
-#define AS(keycode) &as LS(keycode) keycode
-
 / {
     chosen {
         zmk,physical-layout = &foostan_corne_5col_layout;
@@ -26,6 +23,7 @@
             bindings = <&kp>, <&kp>;
         };
     };
+    
         keymap {
                 compatible = "zmk,keymap";
 
